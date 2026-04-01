@@ -1,0 +1,35 @@
+# CourtLink2 Agent - Python dependencies
+
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+
+# LangChain core + Azure OpenAI
+langchain==0.3.14
+langchain-openai==0.3.1
+langchain-community==0.3.14
+
+# OpenAI SDK (embeddings + chat, used via Azure OpenAI)
+openai==1.59.6
+
+# PostgreSQL + pgvector (raw psycopg2, no langchain-postgres needed)
+psycopg2-binary==2.9.10
+pgvector==0.2.5
+
+# HTTP client for CourtLink2 Management API (mTLS support)
+httpx[http2]==0.28.1
+
+# PFX/PKCS#12 certificate loading (for mTLS with CourtLink2 Management API)
+cryptography==44.0.2
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Pydantic v2 (FastAPI dependency, also used for request/response models)
+pydantic==2.10.4
+
+# Markdown parsing for doc chunking
+markdown-it-py==3.0.0
+
+# Git operations for code editing workflow
+gitpython==3.1.44
