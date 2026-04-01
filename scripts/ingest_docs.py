@@ -47,7 +47,7 @@ DOCS = [
     (REPO_ROOT / "docs" / "Management.md", "Management.md"),
     (REPO_ROOT / "docs" / "CCM.md", "CCM.md"),
     (REPO_ROOT / "docs" / "SystemDesign.md", "SystemDesign.md"),
-    (REPO_ROOT / "doc" / "mqtt_analysis.md", "mqtt_analysis.md"),
+    (REPO_ROOT / "docs" / "mqtt_analysis.md", "mqtt_analysis.md"),
 ]
 
 # ── Chunking ───────────────────────────────────────────────────────────────────
