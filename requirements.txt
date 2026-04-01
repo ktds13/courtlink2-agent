@@ -1,8 +1,8 @@
 # CourtLink2 Agent - Python dependencies
 
 # Web framework
-fastapi==0.115.6
-uvicorn[standard]==0.32.1
+fastapi==0.135.2
+uvicorn[standard]>=0.35.0
 
 # LangChain core + Azure OpenAI
 langchain==0.3.14
@@ -23,13 +23,16 @@ httpx[http2]==0.28.1
 cryptography==44.0.2
 
 # Environment variables
-python-dotenv==1.0.1
+python-dotenv>=1.1.0
 
 # Pydantic v2 (FastAPI dependency, also used for request/response models)
-pydantic==2.10.4
+pydantic[email]>=2.11.0
 
 # Markdown parsing for doc chunking
 markdown-it-py==3.0.0
 
 # Git operations for code editing workflow
 gitpython==3.1.44
+
+# MCP server (OpenCode tool integration via stdio transport)
+mcp>=1.0.0
